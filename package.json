@@ -24,6 +24,10 @@
   "license": "MIT",
   "dependencies": {
     "apollo-server-express": "2.4.0",
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
     "bcrypt": "3.0.6",
     "cors": "2.8.5",
     "dotenv": "6.1.0",
@@ -43,10 +47,6 @@
     "passport-github2": "0.1.11"
   },
   "devDependencies": {
-    "@babel/cli": "^7.14.8",
-    "@babel/core": "^7.15.0",
-    "@babel/node": "^7.14.9",
-    "@babel/preset-env": "^7.15.0",
     "eslint": "5.13.0",
     "eslint-config-prettier": "4.0.0",
     "eslint-plugin-prettier": "3.0.1",
