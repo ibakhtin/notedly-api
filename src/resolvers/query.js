@@ -1,4 +1,4 @@
-export const Query = {
+module.exports = {
   notes: async (parent, args, { models }) => {
     return await models.Note.find();
   },
