@@ -1,14 +1,14 @@
-import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
-import { AuthenticationError, ForbiddenError } from 'apollo-server-express';
-import dotenv from 'dotenv';
-import mongoose from 'mongoose';
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const { AuthenticationError, ForbiddenError } = require('apollo-server-express');
+const dotenv = require('dotenv');
+const mongoose = require('mongoose');
 
-import gravatar from '../util/gravatar';
+const gravatar = require('../util/gravatar');
 
 dotenv.config();
 
-export const Mutation = {
+module.exports = {
   newNote: async (parent, args, { models, user }) => {
     if (!user) {
       throw new AuthenticationError('You must be signed in to create a note');
