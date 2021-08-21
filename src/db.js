@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const db = {
   connect: DB_HOST => {
@@ -22,4 +22,4 @@ const db = {
   }
 };
 
-export default db;
+module.exports = db;
