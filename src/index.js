@@ -1,16 +1,16 @@
-import express from 'express';
-import { ApolloServer } from 'apollo-server-express';
-import dotenv from 'dotenv';
-import jwt from 'jsonwebtoken';
-import helmet from 'helmet';
-import cors from 'cors';
-import depthLimit from 'graphql-depth-limit';
-import {createComplexityLimitRule} from 'graphql-validation-complexity'
+const express = require('express');
+const { ApolloServer } = require('apollo-server-express');
+const dotenv = require('dotenv');
+const jwt = require('jsonwebtoken');
+const helmet = require('helmet');
+const cors = require('cors');
+const depthLimit = require('graphql-depth-limit');
+const { createComplexityLimitRule } = require('graphql-validation-complexity');
 
-import db from './db';
-import models from './models';
-import typeDefs from './schema';
-import resolvers from './resolvers';
+const db = require('./db');
+const models = require('./models');
+const typeDefs = require('./schema');
+const resolvers = require('./resolvers');
 
 dotenv.config();
 
