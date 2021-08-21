@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server-express';
+const { gql } = require('apollo-server-express');
 
 const schema = gql`
 
@@ -48,4 +48,4 @@ const schema = gql`
   }
 `;
 
-export default schema;
+module.exports = schema;
